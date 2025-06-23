@@ -1,0 +1,13 @@
+/* src/styles/Gallery.css */
+.gallery-thumbnail {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 200px; /* Tinggi tetap untuk thumbnail */
+  object-fit: cover; /* Pastikan gambar mengisi kotak */
+  width: 100%; /* Lebar mengisi kolom */
+}
+
+.gallery-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+/* src/styles/OurStory.css */
+/* Contoh styling sederhana untuk gambar dan card */
+.story-image {
+    max-height: 350px; /* Batasi tinggi gambar */
+    object-fit: cover; /* Pastikan gambar mengisi kotak tanpa terdistorsi */
+}
+
+/* Responsiveness untuk story section */
+@media (max-width: 767.98px) {
+    .flex-row-reverse {
+        flex-direction: column !important; /* Di mobile, jadikan kolom */
+    }
+}

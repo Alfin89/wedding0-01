@@ -1,13 +1,77 @@
+/* src/index.css */
+/* Import Google Fonts (sudah di public/index.html juga, tapi ini memastikan) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Reset dasar */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Mencegah scroll horizontal */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Tipografi dasar */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #3f4749; /* Warna judul yang elegan */
+  font-weight: 700;
+}
+
+/* Custom Primary Color for Bootstrap (Override) */
+/* Ini akan mengubah warna komponen Bootstrap yang menggunakan .btn-primary, .text-primary, dll. */
+:root {
+  --bs-primary: #c98e8e; /* Dusty rose / Maroon lembut */
+  --bs-primary-rgb: 201, 142, 142;
+  --bs-secondary: #6c757d;
+  --bs-light: #f8f9fa;
+  --bs-white: #ffffff;
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+  background-color: darken(var(--bs-primary), 10%) !important; /* Contoh: #b37a7a */
+  border-color: darken(var(--bs-primary), 10%) !important;
+}
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+}
+
+.bg-light {
+  background-color: var(--bs-light) !important;
+}
+
+/* Common Section Styling */
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.py-80 { /* Custom padding for sections */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Utility classes */
+.cursor-pointer {
+    cursor: pointer;
+}
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
