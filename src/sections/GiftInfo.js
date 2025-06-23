@@ -1,7 +1,7 @@
 // src/sections/GiftInfo.js
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaHeart, FaPiggyBank, FaMobileAlt } from 'react-icons/fa'; // Ikon
+import { FaPiggyBank, FaMobileAlt } from 'react-icons/fa'; // Ikon// Ikon
 import weddingData from '../data/weddingData';
 
 function GiftInfo() {
